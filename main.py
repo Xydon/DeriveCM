@@ -2,7 +2,7 @@ import spacy
 
 class ProcessorComponent:
     def __init__(self, input_parameters):
-        self.nlp = spacy.load()
+        self.nlp = spacy.load("en_core_web_sm")
         self.input_parameters = input_parameters
 
     def analyze_user_story_set(self, user_stories):
